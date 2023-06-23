@@ -7,7 +7,7 @@ Camunda 8 (Zeebe) exporter PoC
    _ZEEBE_BROKER_EXPORTERS_LOGGER_CLASSNAME=exporter.adapter.zeebe.ZeebeAdapter<br>
    ZEEBE_BROKER_EXPORTERS_LOGGER_JARPATH=**/usr/local/zeebe/extlib**/camunda-8-exporter-0.0.1.jar_
 
-- Создать в файловой системе хоста папку _/extlib_, в которую будут помещаться jar'ники экспортеров
+- Создать в файловой системе хоста папку _/extlib_ (название - произвольное), в которую будут помещаться jar'ники экспортеров
 - Настроить в Zeebe broker'ах (в docker-compose.yaml) отдельный mapped volume на папку _/extlib_ в файловой системе хоста:
 
     _volumes:<br>
